@@ -30,9 +30,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {src: "https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"},
-    ]
   },
   /*
   ** Global CSS
