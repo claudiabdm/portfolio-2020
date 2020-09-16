@@ -22,9 +22,9 @@
         </div>
         <div class="window__viewport card__info">
           <!-- <img :src="project.screenshot" class="window__screenshot" /> -->
-          <video class="window__screenshot" autoplay loop>
+          <!-- <video class="window__screenshot" autoplay loop>
             <source :src="project.screenshot" type="video/mp4" />
-          </video>
+          </video> -->
           <div class="card__info-wrapper">
             <p class="card__desc">{{ project.desc }}</p>
             <Tags :tags="project.technologies" :smallTags="true" />
