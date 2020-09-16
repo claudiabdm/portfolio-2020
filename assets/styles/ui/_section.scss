@@ -18,7 +18,7 @@
   // ------------------ //
 
   &__title {
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
     &--sm {
       color: $base;
       font-weight: 400;
@@ -52,7 +52,7 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: rem(5px);
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
 
     @media screen and (min-width: 768px) {
       & {
@@ -71,7 +71,7 @@
     font-size: rem(16px);
     font-weight: 300;
     text-align: justify;
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
 
     @media screen and (min-width: 768px) {
       flex-basis: 0;
@@ -92,7 +92,7 @@
     font-size: 3vh;
     font-family: $font-primary;
     letter-spacing: rem(5px);
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
     
     &--animated {
       opacity: 0;
@@ -125,7 +125,7 @@
     display: block;
     fill: $primary;
     transform: scale(1.5);
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
     
     &--sm {
       @include size(rem(18px), rem(18px));

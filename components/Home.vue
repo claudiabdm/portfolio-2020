@@ -1,9 +1,9 @@
 <template>
   <section class="section section--flex">
     <h2 class="section__title section__title--lg">
-      <div v-visible-onscroll class="typewriter">Hello!</div>
-      <div v-visible-onscroll class="typewriter">I am Claudia Benito.</div>
-      <div v-visible-onscroll class="typewriter">
+      <div class="typewriter">Hello!</div>
+      <div class="typewriter">I am Claudia Benito.</div>
+      <div class="typewriter">
         A <strong>front-end developer</strong>
         <span class="typewriter__caret">_</span>
       </div>

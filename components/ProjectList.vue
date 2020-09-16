@@ -93,7 +93,7 @@ export default Vue.extend({
     @include size(100%, max-content);
     background-color: #fff;
     border-radius: 8px;
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
   }
 }
 

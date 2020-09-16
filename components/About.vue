@@ -82,21 +82,21 @@ export default Vue.extend({
   &__group {
     @include flex(center, center);
     flex-direction: column-reverse;
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
   }
 
   &__img {
     @include flex(center, center);
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
   }
 
   &__avatar {
     @include size(30vw);
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
   }
 
   &__tags {
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
   }
 
   @media screen and (min-width: 768px) {
