@@ -1,6 +1,6 @@
 <template>
-  <section class="section section--flex">
-    <h2 class="section__title section__title--lg" v-if="animated">
+  <section class="section section--flex" v-if="animated">
+    <h2 class="section__title section__title--lg">
       <div class="typewriter">Hello!</div>
       <div class="typewriter">I am Claudia Benito.</div>
       <div class="typewriter">
