@@ -1,14 +1,14 @@
 <template>
-  <section class="section section--flex" v-if="animated">
+  <section class="section section--flex">
     <h2 class="section__title section__title--lg">
-      <div class="typewriter">Hello!</div>
-      <div class="typewriter">I am Claudia Benito.</div>
-      <div class="typewriter">
+      <div v-visible-onscroll class="typewriter">Hello!</div>
+      <div v-visible-onscroll class="typewriter">I am Claudia Benito.</div>
+      <div v-visible-onscroll class="typewriter">
         A <strong>front-end developer</strong>
         <span class="typewriter__caret">_</span>
       </div>
     </h2>
-    <a class="section__link section__link--animated" @click="goTo('about')">
+    <a  v-visible-onscroll class="section__link" @click="goTo('about')">
       Learn more
       <svg class="section__icon" viewBox="0 0 24 24" id="down" width="24" height="24">
         <path d="M0 0h24v24H0V0z" fill="none" />
@@ -22,14 +22,6 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  data() {
-    return {
-      animated: false,
-    };
-  },
-  mounted() {
-    this.animated = true;
-  },
   methods: {
     goTo(section: string) {
       this.$emit('refName', section);
