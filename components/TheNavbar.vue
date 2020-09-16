@@ -44,7 +44,7 @@ export default Vue.extend({
       this.$emit('refName', section);
     },
     onScroll() {
-      const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
+      const atBottom = Math.floor(window.innerHeight + window.pageYOffset) >= Math.floor(document.body.offsetHeight);
       this.anchors.some((anchor: Element, i) => {
         const { top } = anchor.getBoundingClientRect();
         const { bottom } = anchor.getBoundingClientRect();
@@ -52,7 +52,7 @@ export default Vue.extend({
           this.sectionOnView = 'contact' as string;
           return true;
         }
-        if (top <= 0 && bottom - 1 >= 0) {
+        if (Math.floor(top) <= 0 && Math.floor(bottom) - 1 >= 0) {
           this.sectionOnView = this.sections[i] as string;
           return true;
         }
