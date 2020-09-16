@@ -24,7 +24,7 @@ export default Vue.extend({
       projects: [
         {
           name: 'FamilyMe',
-          screenshot: 'videos/familyme-video.mov',
+          screenshot: 'screenshots/familyme.png',
           desc: 'Full-stack web application to manage families.',
           technologies: [
             'Angular 9',
@@ -40,7 +40,7 @@ export default Vue.extend({
         },
         {
           name: 'ACNH Search',
-          screenshot: 'videos/acnh-video.mov',
+          screenshot: 'screenshots/acnh-search.png',
           desc:
             'Front-end app to search critter info for the game Animal Crossing: New Horizons',
           technologies: ['HTML5', 'SCSS', 'Vue', 'Vuetify', 'Amplify', 'GitHub.io'],
@@ -49,7 +49,7 @@ export default Vue.extend({
         },
         {
           name: 'Borify',
-          screenshot: 'videos/borify-video.mov',
+          screenshot: 'screenshots/borify.png',
           desc:
             'A music player using Spotify API. Group challenge winner at Boream bootcamp.',
           technologies: ['HTML5', 'SCSS', 'Angular 9', 'Netlify'],
@@ -58,7 +58,7 @@ export default Vue.extend({
         },
         {
           name: 'Boreame',
-          screenshot: 'videos/boreame-video.mov',
+          screenshot: 'screenshots/boreame.png',
           desc:
             'Contact address book app from scratch. Individual challenge winner at Boream bootcamp.',
           technologies: ['HTML5', 'SCSS', 'JavaScript', 'Gulp', 'GitHub.io'],
