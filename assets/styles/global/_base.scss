@@ -1,0 +1,26 @@
+/*------------------------------*/
+/* BASE                         */
+/* ---------------------------- */
+* {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  color: $grey-300;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: $font-primary;
+  font-weight: $font-weight-light;
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}

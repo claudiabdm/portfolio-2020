@@ -1,0 +1,55 @@
+.window {
+  @include size(100%);
+  border-radius: 8px;
+  border: 1px solid $grey-150;
+  font-size: rem(12px);
+  font-family: $font-secondary;
+  box-shadow: 0px 10px 1px 1px rgba(0, 0, 0, 0.1);
+
+  &__bar {
+    @include flex(center, flex-start);
+    @include size(100%, rem(25px));
+    position: relative;
+    border-bottom: 1px solid $grey-150;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    padding-left: 5px;
+    background: linear-gradient(180deg, $grey-50, $grey-100);
+  }
+  &__title {
+    @include absolute(0, 0, auto, 0);
+    width: 100%;
+    color: $grey-200;
+    font-family: $font-primary;
+    font-size: rem(12px);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__buttons {
+    @include flex(center, flex-start);
+  }
+
+  &__button {
+    @include size(rem(24px), rem(24px));
+    stroke: $grey-150;
+    stroke-width: 0.5;
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        fill: nth($state-colors, $i);
+      }
+    }
+  }
+
+  &__viewport {
+    line-height: 0;
+  }
+
+  &__screenshot {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}

@@ -1,0 +1,51 @@
+// ---------------------------- //
+// TYPEWRITTER EFFECT           //
+// ---------------------------- //
+
+.typewriter {
+  margin: 0 auto;
+  border-right: 1px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: rem(2px);
+  overflow: hidden;
+  z-index: 1000;
+  animation: typing 1.5s 1 normal both;
+
+  .section__title &:first-child {
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(10, end);
+  }
+  .section__title &:nth-child(2) {
+    animation-delay: 1.75s;
+    animation-timing-function: steps(30, end);
+  }
+
+  .section__title &:nth-child(3) {
+    animation-delay: 3.5s;
+    animation-timing-function: steps(30, end);
+  }
+
+  &__caret {
+    animation: blink-caret 0.9s step-end 0s infinite backwards;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,60 @@
+// ------------------------------------------
+// VARIABLES
+// ------------------------------------------
+
+// Color palette
+// -----------------------------------------
+
+// Colors
+
+$primary: #7b13ff;
+$secondary: #e9cfff;
+$tertiary: #dbb1ff;
+$base: #fff;
+
+$error: #eb5757;
+$warning: #ffc400;
+$success: #56c568;
+
+$state-colors: ($error, $warning, $success);
+
+$grey-50: #f6f6f6;
+$grey-100: #c4c4c4;
+$grey-150: #a8a8a8;
+$grey-200: #525252;
+$grey-300: #333;
+$grey-400: #202020;
+
+// Gradients
+
+$gradient: linear-gradient(180deg, $primary 0%, $secondary 100%);
+
+// Scaffolding
+// ------------------------------------------
+$header-height: rem(62px);
+$header-height-desktop: rem(76px);
+
+$link-color: $secondary;
+$link-decoration: none;
+$link-hover: none;
+
+$padding-sides: 30px;
+
+$border: 1px solid $grey-100;
+
+$box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.075);
+
+$box-shadow-sharpen: 0 3px 1px 1px rgba(0, 0, 0, 0.1);
+
+// Font
+// ------------------------------------------
+
+$font-primary: 'Roboto', Arial, sans-serif;
+$font-secondary: 'Space Mono', 'Consolas', 'Courier New', 'Courier';
+$font-size-body: 16px;
+$font-size-base: 1rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;

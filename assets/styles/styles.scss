@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+// FONTS                        //
+// ---------------------------- //
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+// CORE                         //
+// ---------------------------- //
+@import 'mixins/mixins';
+@import 'global/variables';
+@import 'global/reset';
+@import 'global/base';
+
+// COMPONENTS                   //
+// ---------------------------- //
+
+@import 'ui/typewritter';
+@import 'ui/window';
+@import 'ui/section';
+

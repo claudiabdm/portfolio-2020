@@ -1,0 +1,155 @@
+// ------------------ //
+// SECTION            //
+// ------------------ //
+.section {
+  @include size(100vw, 100%);
+  padding: $header-height 30px;
+
+  &--flex {
+    @include flex(center, flex-start);
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: $header-height-desktop 46px;
+  }
+
+  // TITLE              //
+  // ------------------ //
+
+  &__title {
+    transition: all 0.5s linear;
+    &--sm {
+      color: $base;
+      font-weight: 400;
+      letter-spacing: rem(2px);
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        & {
+          font-size: 3.25vw;
+        }
+      }
+    }
+
+    &--lg {
+      font-size: 5vw;
+      font-family: $font-secondary;
+
+      @media screen and (min-width: 768px) {
+        & {
+          font-size: 3.5vw;
+        }
+      }
+    }
+  }
+
+  // SUBTITLE           //
+  // ------------------ //
+  &__subtitle {
+    color: $primary;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: rem(5px);
+    transition: all 0.5s linear;
+
+    @media screen and (min-width: 768px) {
+      & {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  text-align: center;
+  // TEXT               //
+  // ------------------ //
+
+  &__text {
+    margin: 5vw 0;
+    color: $primary;
+    font-size: rem(16px);
+    font-weight: 300;
+    text-align: justify;
+    transition: all 0.5s linear;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 0;
+      flex-grow: 3;
+      color: $base;
+      font-size: 1.5vw;
+    }
+  }
+
+  // LINK               //
+  // ------------------ //
+
+  &__link {
+    @include flex(center, center);
+    flex-direction: column;
+    margin-top: 10vh;
+    color: $primary;
+    font-size: 3vh;
+    font-family: $font-primary;
+    letter-spacing: rem(5px);
+    transition: all 0.5s linear;
+    
+    &--animated {
+      opacity: 0;
+      animation: appear 1s linear 4.5s forwards;
+    }
+    &:hover,
+    &:hover svg {
+      cursor: pointer;
+      color: $primary;
+      fill: $primary;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+      margin-bottom: 10vh;
+      font-size: 2.5vw;
+      transition: transform 0.25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  // ICON               //
+  // ------------------ //
+
+  &__icon {
+    @include size(rem(24px), rem(24px));
+    display: block;
+    fill: $primary;
+    transform: scale(1.5);
+    transition: all 0.5s linear;
+    
+    &--sm {
+      @include size(rem(18px), rem(18px));
+      margin-right: 10px;
+      fill: unset;
+    }
+
+    @media screen and (min-width: 768px) {
+      &__icon {
+        transform: scale(2.5);
+      }
+    }
+  }
+}
+
+// ------------------ //
+// ANIMATIONS         //
+// ------------------ //
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
