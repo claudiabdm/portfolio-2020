@@ -44,8 +44,8 @@ export default Vue.extend({
           desc:
             'Front-end app to search critter info for the game Animal Crossing: New Horizons',
           technologies: ['HTML5', 'SCSS', 'Vue', 'Vuetify', 'Amplify', 'GitHub.io'],
-          demo: 'https://claudiabdm.github.io/acnh-vue/#/',
-          code: 'https://github.com/claudiabdm/acnh-vue',
+          demo: 'https://claudiabdm.github.io/acnh-search',
+          code: 'https://github.com/claudiabdm/acnh-search',
         },
         {
           name: 'Borify',

@@ -29,6 +29,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {src: "https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"},
+      {src: "https://unpkg.com/smoothscroll-anchor-polyfill"},
     ]
   },
   /*
@@ -43,7 +47,6 @@ export default {
   */
   plugins: [
     '@/plugins/visible-onscroll.ts',
-    '@/plugins/smooth-scrolling.ts'
   ],
   /*
   ** Auto import components
