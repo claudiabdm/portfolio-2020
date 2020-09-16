@@ -42,7 +42,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/visible-onscroll.ts'
+    '@/plugins/visible-onscroll.ts',
+    '@/plugins/smooth-scrolling.ts'
   ],
   /*
   ** Auto import components
