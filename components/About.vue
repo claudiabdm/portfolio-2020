@@ -7,7 +7,7 @@
       <div class="section__group">
         <p class="section__text">
           <span class="section__text" v-visible-onscroll>
-            I am a biology graduate that decided to change paths and become a
+            I am a biology graduate that decided to new path and become a
             <strong>front-end</strong> developer after finding out that web
             development was my real <strong>passion</strong>.<br />
           </span>
@@ -50,6 +50,7 @@ export default Vue.extend({
         "JavaScript",
         "Angular",
         "Vue",
+        "RxJS",
         "Material",
         "MongoDB",
         "NodeJS",

@@ -20,7 +20,7 @@
           </div>
           <span class="window__title">{{ project.name }}</span>
         </div>
-        <div class="window__viewport card__info">
+        <div class="window__viewport card__info" @click="isCardVisible" :class="{'card__info--visible': isCardVisible}">
           <img :src="project.screenshot" class="window__screenshot"/>
           <div class="card__info-wrapper">
             <p class="card__desc">{{ project.desc }}</p>
@@ -64,6 +64,7 @@ export default Vue.extend({
   data() {
     return {
       projectCards: [],
+      isCardVisible: false,
     };
   },
   mounted() {
@@ -120,7 +121,7 @@ export default Vue.extend({
     transition: all 0.2s ease-in-out;
     will-change: background-color;
     overflow: hidden;
-    .card__info:hover & {
+    .card__info:hover &, .card__info--visible & {
       cursor: pointer;
       opacity: 1;
       background-color: rgba($color: #000000, $alpha: 0.75);
