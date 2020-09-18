@@ -1,7 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
 // FONTS                        //
 // ---------------------------- //
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(~assets/font/Roboto-Light.ttf),
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(~assets/font/Roboto-Regular.ttf),
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(~assets/font/Roboto-Bold.ttf),
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(~assets/font/SpaceMono-Regular.ttf),
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(~assets/font/SpaceMono-Bold.ttf),
+}
 
 // CORE                         //
 // ---------------------------- //
