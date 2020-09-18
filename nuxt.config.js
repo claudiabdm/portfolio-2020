@@ -43,6 +43,7 @@ export default {
   */
   plugins: [
     '@/plugins/visible-onscroll.ts',
+    { src: '@/plugins/smooth-scroll-polyfill', ssr: false }
   ],
   /*
   ** Auto import components

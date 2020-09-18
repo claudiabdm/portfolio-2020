@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "nuxt-ts --hostname 192.168.0.35",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
@@ -12,11 +12,13 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
     "nuxt": "^2.14.0",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.5",
     "@nuxt/typescript-build": "^2.0.2",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2"
   }
