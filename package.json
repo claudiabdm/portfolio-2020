@@ -19,7 +19,7 @@
     "@nuxt/types": "^2.14.5",
     "@nuxt/typescript-build": "^2.0.2",
     "@types/smoothscroll-polyfill": "^0.3.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^10.0.2"
   }
 }
